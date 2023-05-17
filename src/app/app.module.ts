@@ -62,8 +62,7 @@ import { PerfectScrollbarModule }          from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG }        from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 
-// Elanco Components
-import { Dashboard } from './components/dashboard/dashboard';
+// Custom Components
 import { Applications } from './components/applications/applications';
 import { Resources } from './components/resources/resources';
 import { Product_Details } from './components/product-details/product-details';
@@ -86,8 +85,7 @@ import { CommonService }             from './services/common.service';
     FloatSubMenuComponent,
     ThemePanelComponent,
 
-    // Elanco Componets
-    Dashboard,
+    // Custom Componets
     Applications,
     Resources,
     Product_Details

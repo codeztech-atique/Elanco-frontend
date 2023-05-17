@@ -1,9 +1,4 @@
-var company = [{
-  'icon': 'fa fa-home',
-  'title': 'Dashboard',
-  'url': 'dashboard',
-  'caret': 'false'
-},
+var company = [
 {
   'icon': 'fa fa-list-alt',
   'title': 'Product',
