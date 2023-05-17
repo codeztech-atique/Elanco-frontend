@@ -4,9 +4,6 @@ import { Subject }                           from 'rxjs';
 import { SharedservicesService }             from '../../services/sharedservices.service';
 import { DataTableDirective } from 'angular-datatables';
 
-import Swal from 'sweetalert2';
-import * as uuid from 'uuid';
-
 @Component({
   selector: 'applications',
   templateUrl: './applications.html',
@@ -59,11 +56,6 @@ export class Applications implements OnInit, AfterViewInit {
         responsive: true.valueOf,
         pagingType: 'simple_numbers', // simple // simple_numbers // full // full_numbers
         order:[[1, 'desc']], 
-        // destroy: true,
-        // retrieve: true,
-        // searching: false,
-        // paging: false,
-        // lengthChange: false, // Remove select options
         
         language: {
           searchPlaceholder: 'Search your order' // To Search in the search placeholder
@@ -138,9 +130,6 @@ export class Applications implements OnInit, AfterViewInit {
     }
 
     applicationDetailsView(data) {
-       console.log(data);
        this.router.navigate(['product/details', { data: JSON.stringify(data) }]);
     }
-    
-    
 }
