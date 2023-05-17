@@ -81,14 +81,6 @@ span.input-group-text.input-group-width-xl {
 }
 
 
-#login-error {
-    display: none;
-    width: 100%;
-    margin-top: 0.25rem;
-    font-size: .7125rem;
-    color: #ff5b57;
-}
-
 /* Tooltip container */
 
 .is-valid:hover, .is-invalid:hover {
@@ -185,4 +177,12 @@ span.input-group-text.input-group-width-xl {
 
 .fixed-height {
     height: 35px;
+}
+
+.search-icon {
+    background: url("../../../assets/img/chat/icons-search.png") no-repeat left;
+    background-size: 18px;
+    background-position: 3px;
+    height: 30px;
+    padding-left: 32px;
 }

@@ -147,7 +147,7 @@ export class AppModule {
   constructor(private router: Router, private titleService: Title, private route: ActivatedRoute) {
     router.events.subscribe((e) => {
       if (e instanceof NavigationEnd) {
-        var title = 'Analysts24 X 7 | ' + this.route.snapshot.firstChild.data['title'];
+        var title = 'Elanco Pharmaceutical | ' + this.route.snapshot.firstChild.data['title'];
         this.titleService.setTitle(title);
       }
     });
