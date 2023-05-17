@@ -49,37 +49,6 @@ export class HeaderComponent implements OnInit {
 	}
 
 	constructor(private route: ActivatedRoute, private commonService: CommonService, private shared: SharedservicesService) {
-		// this.fromPage = CONSTANTS.PAGESTARTS_FROM;
-		// this.pageSize = CONSTANTS.NOTIFICATION_PAGESIZE;
-		// this.isVisited = false;
-		
-		// this.wbsocketService.receiveMessage();
-		// this.currentUserSubscription = this.authenticationService.currentUser.subscribe(async user => {
-		// 	this.currentUser = user;
-		// 	this.userProfilePictureURL = this.currentUser['custom:profileurl'];
-		// 	setTimeout(() => {
-		// 		if(Object.keys(this.currentUser).length > 0) {
-		// 			this.callNoticationAPI();
-		// 		}
-		// 	}, 3000);
-
-		// 	if(Object.keys(this.currentUser).length > 0) {
-		// 		this._subscription = this.commonService._subjectCommon.asObservable().pipe(debounceTime(1000)).subscribe((notification) => {
-		// 			if(notification) {
-		// 				this.callNoticationAPI();
-		// 			}
-		// 		});
-		// 	}
-		// });
-		
-		// this.commonService._subjectProfile$.subscribe((profilePicURL) => {
-		// 	console.log("Header Component:", profilePicURL);
-		// 	const userDetails = JSON.parse(localStorage.getItem('currentUser'));
-		// 	userDetails['custom:profileurl'] = profilePicURL;
-		// 	localStorage.setItem('currentUser', JSON.stringify(userDetails))
-		// 	this.userProfilePictureURL = profilePicURL;
-		// });
-		
 	}
 
     
