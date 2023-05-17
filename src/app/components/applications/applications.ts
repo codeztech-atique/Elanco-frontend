@@ -30,7 +30,7 @@ export class Applications implements OnInit, AfterViewInit {
     showApplication: boolean;
     flag: boolean;
 
-    constructor(private shared: SharedservicesService) {
+    constructor(private shared: SharedservicesService, private router: Router) {
       this.keepPreviousApplicationRecord = "";
       this.showApplication = false;
       this.flag = false;
@@ -136,6 +136,11 @@ export class Applications implements OnInit, AfterViewInit {
         }
       });
     }
-  
+
+    applicationDetailsView(data) {
+       console.log(data);
+       this.router.navigate(['product/details', { data: JSON.stringify(data) }]);
+    }
+    
     
 }

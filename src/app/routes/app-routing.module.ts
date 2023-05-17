@@ -17,9 +17,9 @@ import { Product_Details } from '../components/product-details/product-details';
 var routes: Routes = [
     { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     { path: 'dashboard', component: Dashboard, data: { title: 'Dashboard' } },
-    { path: 'elanco/applications', component: Applications, data: { title: 'Application' } },
-    { path: 'elanco/resources', component: Resources, data: { title: 'Resouces' } },              
-    { path: 'details', component: Product_Details, data: { title: 'Details' } },              
+    { path: 'product/applications', component: Applications, data: { title: 'Application' } },
+    { path: 'product/resources', component: Resources, data: { title: 'Resouces' } },              
+    { path: 'product/details', component: Product_Details, data: { title: 'Product Details' } },              
 ];
 
 @NgModule({

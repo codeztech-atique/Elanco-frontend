@@ -19,7 +19,7 @@
 				<div class="card-body">
 					<div *ngIf="applicationName" class="row mb-15px">	
 						<div class="input-group">
-							You have selected: <span class="badge bg-success ms-1">{{applicationName}}</span>		
+							Application selected: <span class="badge bg-success ms-1">{{applicationName}}</span>		
 						</div>	
 					</div>
                     
@@ -32,17 +32,17 @@
 								<span class="pc-select">
 									<span *ngIf="!applicationName" class="pc-element pc-trigger">Choose your application</span>
 									<span *ngIf="applicationName" class="pc-element pc-trigger">
-										<span class="application-icon"><i class="fa-file-video fa-fw fa-sm fas"></i></span>
+										<span class="application-icon"><i class="fa-apple-whole fa-fw fa-sm fas"></i></span>
 										<span class="application-name">{{applicationName}}</span>
 									</span>
-									<span class="pc-list application-list-width" *ngIf="showApplication">
-										<div class="widget-input-box search-application">
+									<span class="pc-list list-width" *ngIf="showApplication">
+										<div class="widget-input-box search">
 											<input type="text" placeholder="Search your application name" class="form-control search-icon" (keyup)="searchApplicationName($event.target.value)" (click)="keepOpenDropDownApplication()">
 										</div>
 										<ul *ngFor="let application of listUserApplications; let i = index">
 											<li data-order="{{index}}" (click)="selectApplication(application)"><!-- <i class="{{category.iconType}}"></i> -->
-												<span class="application-icon"><i class="fa-file-video fa-fw fa-sm fas"></i></span> 
-												<span class="dropdown-application-name">{{application}}</span>
+												<span class="application-icon"><i class="fa-apple-whole fa-fw fa-sm fas"></i></span> 
+												<span class="dropdown-name">{{application}}</span>
 											</li>
 										</ul>
 									</span>
@@ -58,7 +58,6 @@
 								<tr> <!-- *ngIf="applicationInDetails" -->
 									<th>Instance Id</th>
 									<th>Date</th>
-									<th>Consumed Quantitiy</th>
 									<th>Resource Group</th>
 									<th>Resource Location</th>
 									<th>Unit Of Measure</th>
@@ -67,14 +66,12 @@
 							</thead>
 							<tbody>
 								<tr *ngFor="let data of applicationInDetails; let i = index">
-									<td><a href="javascript:;" class="fw-bold">#{{data.InstanceId | slice: -5 }}</a></td>
+									<td><a href="javascript:;" class="fw-bold" (click)="applicationDetailsView(data)">#{{data.InstanceId | slice: -5 }}</a></td>
 									<td *ngIf="!data.InstanceId"><a href="javascript:;" class="fw-bold"></a></td>
 									
 									<td *ngIf="data.Date">{{data.Date}}</td>
 									<td *ngIf="!data.Date"></td>
 									
-									<td *ngIf="data.ConsumedQuantity">{{data.ConsumedQuantity}}</td>
-									<td *ngIf="!data.ConsumedQuantity"></td>
 
 									<td *ngIf="data.ResourceGroup">{{data.ResourceGroup}}</td>	
 									<td *ngIf="!data.ResourceGroup"></td>
@@ -85,13 +82,13 @@
 									<td *ngIf="data.UnitOfMeasure">
 										
 										<span *ngIf="data.UnitOfMeasure" class="badge border border-success text-success px-2 pt-5px pb-5px rounded fs-12px d-inline-flex align-items-center">
-											<i  class="fa fa-circle fs-9px fa-fw me-5px"></i>{{data.UnitOfMeasure}}
+											<i class="fa fa-circle fs-9px fa-fw me-5px"></i>{{data.UnitOfMeasure}}
 										</span>
 									</td>
 									<td *ngIf="!data.UnitOfMeasure"></td>
 											
 									<td>
-										<a href="javascript:;" class="btn btn-dark"><i class="fa fa-desktop"></i> Details</a>
+										<a href="javascript:;" class="btn btn-dark" (click)="applicationDetailsView(data)"><i class="fa fa-desktop"></i> Details</a>
 									</td>
 								</tr>
 							</tbody>

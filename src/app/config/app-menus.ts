@@ -6,16 +6,16 @@ var company = [{
 },
 {
   'icon': 'fa fa-list-alt',
-  'title': 'Elanco',
+  'title': 'Product',
   'url': '',
   'label': 'NEW',
   'caret': 'true',
   'submenu': [{
-    'url': 'elanco/applications',
+    'url': 'product/applications',
     'title': 'Applications',
     'highlight': 'true'
   },{
-    'url': 'elanco/resources',
+    'url': 'product/resources',
     'title': 'Resources'
   }]
 }

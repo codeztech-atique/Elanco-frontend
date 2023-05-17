@@ -1,0 +1,129 @@
+<!-- BEGIN breadcrumb -->
+<ol class="breadcrumb float-xl-end">
+	<li class="breadcrumb-item"><a href="javascript:;">Home</a></li>
+	<li class="breadcrumb-item"><a href="javascript:;">Product</a></li>
+    <li class="breadcrumb-item active">Details</li>
+</ol>
+<!-- END breadcrumb -->
+<!-- BEGIN page-header -->
+<h1 class="page-header">Product Details</h1>
+<!-- END page-header -->
+
+<!-- BEGIN row -->
+<div class="row">
+	<!-- BEGIN col-12 -->
+	<div class="col-xl-12">
+		
+		<!-- BEGIN panel -->
+		<panel title="Order details">
+			<div class="card">	
+				<div class="card-body">
+					<div class="row mb-15px">	
+						<div class="col-md-6">
+							<div class="input-group">
+								Resource Group: <span class="badge bg-blue ms-1">{{productDetails.ResourceGroup}}</span>	
+							</div>	
+						</div>
+						<div class="col-md-6">
+							<div class="fr-2">
+								Resource Location: <span class="badge bg-red ms-1">{{productDetails.ResourceLocation}}</span>			
+                            </div>
+					    </div>      
+                    </div>
+
+					
+					<div class="row mb-15px">
+
+						<div class="col-md-3">
+							<div class="input-group">
+								<span class="input-group-text">Consumed Quantity</span>
+								<input type="text" class="form-control" value="{{productDetails.ConsumedQuantity}}" disabled/>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="input-group">
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="input-group">
+								<span class="input-group-text">Cost</span>
+								<input type="text" class="form-control" value="${{productDetails.Cost}}" disabled/>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row mb-15px">	
+						<div class="input-group">
+							<span class="input-group-text input-group-width-xl">Instance id</span>
+							<div class="input-icons">
+								<input type="text" class="form-control" value="{{productDetails.InstanceId}}" disabled/>
+							</div>
+						</div>
+					</div>
+
+                    <div class="row mb-15px">	
+						<div class="input-group">
+							<span class="input-group-text input-group-width-xl">Meter category</span>
+							<div class="input-icons">
+								<input type="text" class="form-control" value="{{productDetails.MeterCategory}}" disabled/>
+							</div>
+						</div>
+					</div>
+
+                    <div class="row mb-15px">	
+						<div class="input-group">
+							<span class="input-group-text input-group-width-xl">Date</span>
+							<div class="input-icons">
+								<input type="text" class="form-control" value="{{productDetails.Date}}" disabled/>
+							</div>
+						</div>
+					</div>
+
+                    <div class="row mb-15px">	
+						<div class="input-group">
+							<span class="input-group-text input-group-width-xl">Unit of measure</span>
+							<div class="input-icons">
+								<input type="text" class="form-control" value="{{productDetails.UnitOfMeasure}}" disabled/>
+							</div>
+						</div>
+					</div>
+
+                    <div class="row mb-15px">	
+						<div class="input-group">
+							<span class="input-group-text input-group-width-xl">Location</span>
+							<div class="input-icons">
+								<input type="text" class="form-control" value="{{productDetails.Location}}" disabled/>
+							</div>
+						</div>
+					</div>
+
+                    <div class="row mb-15px">	
+						<div class="input-group">
+							<span class="input-group-text input-group-width-xl">Service Name</span>
+							<div class="input-icons">
+								<input type="text" class="form-control" value="{{productDetails.ServiceName}}" disabled/>
+							</div>
+						</div>
+					</div>
+
+                    <div class="row mb-15px">	
+						<div class="input-group">
+							<span class="input-group-text input-group-width-xl">Tags</span>
+							<div class="form-control input-icons">
+                                <span class="badge bg-green ms-1">{{productDetails.Tags.appName}}</span>	
+                                <span class="badge bg-green ms-1">{{productDetails.Tags.environment}}</span>	
+                                <span class="badge bg-green ms-1">{{productDetails.Tags.businessUnit}}</span>	
+								<!-- <input type="text" class="form-control" value="{{productDetails.ServiceName}}" disabled/> -->
+							</div>
+						</div>
+					</div>
+			    </div> 
+			</div>
+		</panel>
+		<!-- END panel -->
+	</div>
+</div>
+<!-- END row -->

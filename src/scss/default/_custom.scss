@@ -180,9 +180,54 @@ span.input-group-text.input-group-width-xl {
 }
 
 .search-icon {
-    background: url("../../../assets/img/chat/icons-search.png") no-repeat left;
+    background: url("../../assets/img/chat/icons-search.png") no-repeat left;
     background-size: 18px;
     background-position: 3px;
     height: 30px;
     padding-left: 32px;
+}
+
+.input-icons {
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+}
+
+.icon {
+    position: absolute;
+    bottom: 15px;
+    margin-left: 4px;
+}
+
+
+.search {
+    padding: 6px;
+}
+
+.dropdown-name {
+    margin-left: 25px;
+}
+
+.picker, .input-max-width {
+    width: 40% !important;
+}
+
+.pc-trigger {
+    height: 35px;
+}
+
+.list-width {
+    height: 20rem;
+    overflow-y: auto;
+}
+
+.application-name, .resources-name {
+    margin-left: 25px;
+    position: absolute;
+}
+
+.application-icon, .resources-icon {
+    font-size: 20px;
+    position: absolute;
+    margin-top: -5px;
 }
